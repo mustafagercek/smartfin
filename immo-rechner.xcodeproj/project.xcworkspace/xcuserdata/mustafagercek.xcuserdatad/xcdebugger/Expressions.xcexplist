@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "closure #7 in closure #1 in closure #1 in CreateLoanView.body.getter:CreateLoanView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "viewModel.navigate">
+            </PersistentString>
+            <PersistentString
+               value = "$viewModel.navigate">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GetRepaymentPlanUseCase.getYearlyRepaymentSteps(loan:):GetRepaymentPlan.swift">
+      </ContextState>
+      <ContextState
+         contextName = "GetEquityInvestmentReturnPlanUseCase.getReturnPlan(investment:):GetEquityInvestmentReturnPlan.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "I * pow(q, n)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CurrencyUITextField.editingChanged():CurrencyTextField.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "value">
+            </PersistentString>
+            <PersistentString
+               value = "text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GetRepaymentPlanUseCase.getMonthlyPaymentSteps(loan:):GetRepaymentPlan.swift">
+      </ContextState>
+      <ContextState
+         contextName = "InputUITextField.init(formatter:valueUpdater:initValue:):InputUITextField.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "decimal">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PercentageUITextField.editingChanged():PercentageUITextField.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "pow(10, formatter.maximumFractionDigits)">
+            </PersistentString>
+            <PersistentString
+               value = "textValue.decimal">
+            </PersistentString>
+            <PersistentString
+               value = "text">
+            </PersistentString>
+            <PersistentString
+               value = "value">
+            </PersistentString>
+            <PersistentString
+               value = "formatter.maximumFractionDigits">
+            </PersistentString>
+            <PersistentString
+               value = "textValue.digits.count">
+            </PersistentString>
+            <PersistentString
+               value = "currency(from: Decimal(value/100))">
+            </PersistentString>
+            <PersistentString
+               value = "decimal">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PercentageUITextField.decimal.getter:PercentageUITextField.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "textValue.decimal">
+            </PersistentString>
+            <PersistentString
+               value = "textValue.decimal / pow(10, formatter.maximumFractionDigits)">
+            </PersistentString>
+            <PersistentString
+               value = " Int(doubleValue)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CreateLoanViewModelTests.testFetchNames():CreateLoanViewModelTests.swift">
+      </ContextState>
+      <ContextState
+         contextName = "CurrencyUITextField.deleteBackward():CurrencyTextField.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "textValue.digits.dropLast().string">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "InputUITextField.setupViews():InputUITextField.swift">
+      </ContextState>
+      <ContextState
+         contextName = "GetRepaymentPlanUseCase.getRemainingDebt(forYear:loan:):GetRepaymentPlan.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "1+loan.interestRate">
+            </PersistentString>
+            <PersistentString
+               value = "(pow(1+loan.interestRate,Float(forYear))-1)">
+            </PersistentString>
+            <PersistentString
+               value = " ((pow(1+loan.interestRate,Float(forYear))-1)/loan.interestRate)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GetRepaymentPlanUseCase.getMonthlyPayment(loan:):GetRepaymentPlan.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "loan.amount * totalRate">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

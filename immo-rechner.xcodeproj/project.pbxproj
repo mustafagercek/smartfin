@@ -1,0 +1,910 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F936223F2987036A00D2B111 /* InputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F936223E2987036A00D2B111 /* InputTextField.swift */; };
+		F93622412987038E00D2B111 /* InputUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93622402987038E00D2B111 /* InputUITextField.swift */; };
+		F936224429872C5B00D2B111 /* CreateLoanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F936224329872C5B00D2B111 /* CreateLoanViewModel.swift */; };
+		F936224629873C9100D2B111 /* CreateLoanViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F936224529873C9100D2B111 /* CreateLoanViewModelTests.swift */; };
+		F936224829873DFC00D2B111 /* InputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F936223E2987036A00D2B111 /* InputTextField.swift */; };
+		F936224929873E0B00D2B111 /* InputUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93622402987038E00D2B111 /* InputUITextField.swift */; };
+		F936224C2987454400D2B111 /* LoanRepaymentPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F936224B2987454400D2B111 /* LoanRepaymentPlanView.swift */; };
+		F936224F29902E2B00D2B111 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F936224E29902E2B00D2B111 /* Coordinator.swift */; };
+		F9362252299035FE00D2B111 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9362251299035FE00D2B111 /* Destination.swift */; };
+		F9362254299049D200D2B111 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9362253299049D200D2B111 /* StringExt.swift */; };
+		F9A5C9FC297D76C400BC1469 /* immo_rechnerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5C9FB297D76C400BC1469 /* immo_rechnerApp.swift */; };
+		F9A5CA00297D76C500BC1469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9A5C9FF297D76C500BC1469 /* Assets.xcassets */; };
+		F9A5CA03297D76C500BC1469 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9A5CA02297D76C500BC1469 /* Preview Assets.xcassets */; };
+		F9A5CA05297D76C500BC1469 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA04297D76C500BC1469 /* Persistence.swift */; };
+		F9A5CA08297D76C500BC1469 /* immo_rechner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA06297D76C500BC1469 /* immo_rechner.xcdatamodeld */; };
+		F9A5CA1C297D76C500BC1469 /* immo_rechnerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA1B297D76C500BC1469 /* immo_rechnerUITests.swift */; };
+		F9A5CA1E297D76C500BC1469 /* immo_rechnerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA1D297D76C500BC1469 /* immo_rechnerUITestsLaunchTests.swift */; };
+		F9A5CA2F297D8BE300BC1469 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA2E297D8BE300BC1469 /* Property.swift */; };
+		F9A5CA32297D8D5F00BC1469 /* Purchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA31297D8D5F00BC1469 /* Purchase.swift */; };
+		F9A5CA34297D8E5700BC1469 /* AdditionalCostRatios.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA33297D8E5700BC1469 /* AdditionalCostRatios.swift */; };
+		F9A5CA37297D91BD00BC1469 /* AnnuityLoan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA36297D91BD00BC1469 /* AnnuityLoan.swift */; };
+		F9A5CA3A297D936800BC1469 /* RepaymentPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA39297D936800BC1469 /* RepaymentPlan.swift */; };
+		F9A5CA3D297D976200BC1469 /* GetRepaymentPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA3C297D976200BC1469 /* GetRepaymentPlan.swift */; };
+		F9A5CA3F297D9AE100BC1469 /* GetRepaymentPlanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA3E297D9AE100BC1469 /* GetRepaymentPlanTests.swift */; };
+		F9A5CA40297D9B1200BC1469 /* AnnuityLoan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA36297D91BD00BC1469 /* AnnuityLoan.swift */; };
+		F9A5CA41297D9BC700BC1469 /* GetRepaymentPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA3C297D976200BC1469 /* GetRepaymentPlan.swift */; };
+		F9A5CA42297DA06A00BC1469 /* RepaymentPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA39297D936800BC1469 /* RepaymentPlan.swift */; };
+		F9A5CA45297DA18B00BC1469 /* FloatExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA44297DA18B00BC1469 /* FloatExt.swift */; };
+		F9A5CA46297DABEC00BC1469 /* FloatExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA44297DA18B00BC1469 /* FloatExt.swift */; };
+		F9A5CA48297DC82800BC1469 /* AnnuityLoanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA47297DC82800BC1469 /* AnnuityLoanTests.swift */; };
+		F9A5CA4F297DF57600BC1469 /* RepaymentPlanStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA4E297DF57600BC1469 /* RepaymentPlanStep.swift */; };
+		F9A5CA50297DF57600BC1469 /* RepaymentPlanStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA4E297DF57600BC1469 /* RepaymentPlanStep.swift */; };
+		F9A5CA52297DF6F600BC1469 /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA51297DF6F600BC1469 /* DateExt.swift */; };
+		F9A5CA53297DF6F600BC1469 /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA51297DF6F600BC1469 /* DateExt.swift */; };
+		F9A5CA57297E032A00BC1469 /* Rent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA56297E032A00BC1469 /* Rent.swift */; };
+		F9A5CA5D297E050400BC1469 /* GetRentPaymentPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA5C297E050400BC1469 /* GetRentPaymentPlan.swift */; };
+		F9A5CA5E297E050400BC1469 /* GetRentPaymentPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA5C297E050400BC1469 /* GetRentPaymentPlan.swift */; };
+		F9A5CA61297E0B9A00BC1469 /* RentPaymentPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA60297E0B9A00BC1469 /* RentPaymentPlan.swift */; };
+		F9A5CA62297E0B9A00BC1469 /* RentPaymentPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA60297E0B9A00BC1469 /* RentPaymentPlan.swift */; };
+		F9A5CA69297E0F8000BC1469 /* EquityInvestment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA68297E0F8000BC1469 /* EquityInvestment.swift */; };
+		F9A5CA6A297E0F8000BC1469 /* EquityInvestment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA68297E0F8000BC1469 /* EquityInvestment.swift */; };
+		F9A5CA6C297E104A00BC1469 /* EquityInvestmentReturnPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA6B297E104A00BC1469 /* EquityInvestmentReturnPlan.swift */; };
+		F9A5CA6D297E104A00BC1469 /* EquityInvestmentReturnPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA6B297E104A00BC1469 /* EquityInvestmentReturnPlan.swift */; };
+		F9A5CA70297E10CF00BC1469 /* GetEquityInvestmentReturnPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA6F297E10CF00BC1469 /* GetEquityInvestmentReturnPlan.swift */; };
+		F9A5CA71297E10CF00BC1469 /* GetEquityInvestmentReturnPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA6F297E10CF00BC1469 /* GetEquityInvestmentReturnPlan.swift */; };
+		F9A5CA72297E122600BC1469 /* Rent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA56297E032A00BC1469 /* Rent.swift */; };
+		F9A5CA74297E124100BC1469 /* EquityInvestmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA73297E124100BC1469 /* EquityInvestmentTests.swift */; };
+		F9A5CA76297F11AE00BC1469 /* EquityInvestmentReturnStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA75297F11AE00BC1469 /* EquityInvestmentReturnStep.swift */; };
+		F9A5CA77297F11AE00BC1469 /* EquityInvestmentReturnStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA75297F11AE00BC1469 /* EquityInvestmentReturnStep.swift */; };
+		F9A5CA792980A2C000BC1469 /* GetRentPaymentPlanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA782980A2C000BC1469 /* GetRentPaymentPlanTests.swift */; };
+		F9A5CA7B2980AFE400BC1469 /* FormulaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA7A2980AFE400BC1469 /* FormulaManager.swift */; };
+		F9A5CA7C2980AFE400BC1469 /* FormulaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA7A2980AFE400BC1469 /* FormulaManager.swift */; };
+		F9A5CA7E2983274C00BC1469 /* CreateLoanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA7D2983274C00BC1469 /* CreateLoanView.swift */; };
+		F9A5CA812983424600BC1469 /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA802983424600BC1469 /* ColorExt.swift */; };
+		F9A5CA822983424600BC1469 /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A5CA802983424600BC1469 /* ColorExt.swift */; };
+		F9C8F3D72992869A002368F5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9C8F3D92992869A002368F5 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9A5CA0E297D76C500BC1469 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9A5C9F0297D76C400BC1469 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9A5C9F7297D76C400BC1469;
+			remoteInfo = "immo-rechner";
+		};
+		F9A5CA18297D76C500BC1469 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9A5C9F0297D76C400BC1469 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9A5C9F7297D76C400BC1469;
+			remoteInfo = "immo-rechner";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F936223E2987036A00D2B111 /* InputTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextField.swift; sourceTree = "<group>"; };
+		F93622402987038E00D2B111 /* InputUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputUITextField.swift; sourceTree = "<group>"; };
+		F936224329872C5B00D2B111 /* CreateLoanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateLoanViewModel.swift; sourceTree = "<group>"; };
+		F936224529873C9100D2B111 /* CreateLoanViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateLoanViewModelTests.swift; sourceTree = "<group>"; };
+		F936224B2987454400D2B111 /* LoanRepaymentPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanRepaymentPlanView.swift; sourceTree = "<group>"; };
+		F936224E29902E2B00D2B111 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F9362251299035FE00D2B111 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		F9362253299049D200D2B111 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		F9A5C9F8297D76C400BC1469 /* immo-rechner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "immo-rechner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9A5C9FB297D76C400BC1469 /* immo_rechnerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = immo_rechnerApp.swift; sourceTree = "<group>"; };
+		F9A5C9FF297D76C500BC1469 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9A5CA02297D76C500BC1469 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F9A5CA04297D76C500BC1469 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		F9A5CA07297D76C500BC1469 /* immo_rechner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = immo_rechner.xcdatamodel; sourceTree = "<group>"; };
+		F9A5CA0D297D76C500BC1469 /* immo-rechnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "immo-rechnerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9A5CA17297D76C500BC1469 /* immo-rechnerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "immo-rechnerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9A5CA1B297D76C500BC1469 /* immo_rechnerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = immo_rechnerUITests.swift; sourceTree = "<group>"; };
+		F9A5CA1D297D76C500BC1469 /* immo_rechnerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = immo_rechnerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F9A5CA2E297D8BE300BC1469 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		F9A5CA31297D8D5F00BC1469 /* Purchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchase.swift; sourceTree = "<group>"; };
+		F9A5CA33297D8E5700BC1469 /* AdditionalCostRatios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalCostRatios.swift; sourceTree = "<group>"; };
+		F9A5CA36297D91BD00BC1469 /* AnnuityLoan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnuityLoan.swift; sourceTree = "<group>"; };
+		F9A5CA39297D936800BC1469 /* RepaymentPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepaymentPlan.swift; sourceTree = "<group>"; };
+		F9A5CA3C297D976200BC1469 /* GetRepaymentPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRepaymentPlan.swift; sourceTree = "<group>"; };
+		F9A5CA3E297D9AE100BC1469 /* GetRepaymentPlanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRepaymentPlanTests.swift; sourceTree = "<group>"; };
+		F9A5CA44297DA18B00BC1469 /* FloatExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatExt.swift; sourceTree = "<group>"; };
+		F9A5CA47297DC82800BC1469 /* AnnuityLoanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnuityLoanTests.swift; sourceTree = "<group>"; };
+		F9A5CA4E297DF57600BC1469 /* RepaymentPlanStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepaymentPlanStep.swift; sourceTree = "<group>"; };
+		F9A5CA51297DF6F600BC1469 /* DateExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
+		F9A5CA56297E032A00BC1469 /* Rent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rent.swift; sourceTree = "<group>"; };
+		F9A5CA5C297E050400BC1469 /* GetRentPaymentPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRentPaymentPlan.swift; sourceTree = "<group>"; };
+		F9A5CA60297E0B9A00BC1469 /* RentPaymentPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentPaymentPlan.swift; sourceTree = "<group>"; };
+		F9A5CA68297E0F8000BC1469 /* EquityInvestment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquityInvestment.swift; sourceTree = "<group>"; };
+		F9A5CA6B297E104A00BC1469 /* EquityInvestmentReturnPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquityInvestmentReturnPlan.swift; sourceTree = "<group>"; };
+		F9A5CA6F297E10CF00BC1469 /* GetEquityInvestmentReturnPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEquityInvestmentReturnPlan.swift; sourceTree = "<group>"; };
+		F9A5CA73297E124100BC1469 /* EquityInvestmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquityInvestmentTests.swift; sourceTree = "<group>"; };
+		F9A5CA75297F11AE00BC1469 /* EquityInvestmentReturnStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquityInvestmentReturnStep.swift; sourceTree = "<group>"; };
+		F9A5CA782980A2C000BC1469 /* GetRentPaymentPlanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRentPaymentPlanTests.swift; sourceTree = "<group>"; };
+		F9A5CA7A2980AFE400BC1469 /* FormulaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaManager.swift; sourceTree = "<group>"; };
+		F9A5CA7D2983274C00BC1469 /* CreateLoanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateLoanView.swift; sourceTree = "<group>"; };
+		F9A5CA802983424600BC1469 /* ColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
+		F9C8F3D82992869A002368F5 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9A5C9F5297D76C400BC1469 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A5CA0A297D76C500BC1469 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A5CA14297D76C500BC1469 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F936224D298EB9E000D2B111 /* Loan */ = {
+			isa = PBXGroup;
+			children = (
+				F936224B2987454400D2B111 /* LoanRepaymentPlanView.swift */,
+				F9A5CA7D2983274C00BC1469 /* CreateLoanView.swift */,
+				F936224329872C5B00D2B111 /* CreateLoanViewModel.swift */,
+			);
+			path = Loan;
+			sourceTree = "<group>";
+		};
+		F9362250299035EE00D2B111 /* Coordination */ = {
+			isa = PBXGroup;
+			children = (
+				F936224E29902E2B00D2B111 /* Coordinator.swift */,
+				F9362251299035FE00D2B111 /* Destination.swift */,
+			);
+			path = Coordination;
+			sourceTree = "<group>";
+		};
+		F9A5C9EF297D76C400BC1469 = {
+			isa = PBXGroup;
+			children = (
+				F9A5C9FA297D76C400BC1469 /* immo-rechner */,
+				F9A5CA10297D76C500BC1469 /* immo-rechnerTests */,
+				F9A5CA1A297D76C500BC1469 /* immo-rechnerUITests */,
+				F9A5C9F9297D76C400BC1469 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F9A5C9F9297D76C400BC1469 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9A5C9F8297D76C400BC1469 /* immo-rechner.app */,
+				F9A5CA0D297D76C500BC1469 /* immo-rechnerTests.xctest */,
+				F9A5CA17297D76C500BC1469 /* immo-rechnerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9A5C9FA297D76C400BC1469 /* immo-rechner */ = {
+			isa = PBXGroup;
+			children = (
+				F9A5CA2B297D771600BC1469 /* Presentation */,
+				F9A5CA2A297D770800BC1469 /* Domain */,
+				F9A5CA43297DA17400BC1469 /* Util */,
+				F9A5CA83298342CE00BC1469 /* Extensions */,
+				F9A5C9FF297D76C500BC1469 /* Assets.xcassets */,
+				F9A5CA04297D76C500BC1469 /* Persistence.swift */,
+				F9C8F3D92992869A002368F5 /* Localizable.strings */,
+				F9A5CA06297D76C500BC1469 /* immo_rechner.xcdatamodeld */,
+				F9A5CA01297D76C500BC1469 /* Preview Content */,
+			);
+			path = "immo-rechner";
+			sourceTree = "<group>";
+		};
+		F9A5CA01297D76C500BC1469 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F9A5CA02297D76C500BC1469 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F9A5CA10297D76C500BC1469 /* immo-rechnerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F9A5CA782980A2C000BC1469 /* GetRentPaymentPlanTests.swift */,
+				F9A5CA73297E124100BC1469 /* EquityInvestmentTests.swift */,
+				F9A5CA47297DC82800BC1469 /* AnnuityLoanTests.swift */,
+				F9A5CA3E297D9AE100BC1469 /* GetRepaymentPlanTests.swift */,
+				F936224529873C9100D2B111 /* CreateLoanViewModelTests.swift */,
+			);
+			path = "immo-rechnerTests";
+			sourceTree = "<group>";
+		};
+		F9A5CA1A297D76C500BC1469 /* immo-rechnerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F9A5CA1B297D76C500BC1469 /* immo_rechnerUITests.swift */,
+				F9A5CA1D297D76C500BC1469 /* immo_rechnerUITestsLaunchTests.swift */,
+			);
+			path = "immo-rechnerUITests";
+			sourceTree = "<group>";
+		};
+		F9A5CA2A297D770800BC1469 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F9A5CA3B297D972000BC1469 /* UseCase */,
+				F9A5CA2D297D77F300BC1469 /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F9A5CA2B297D771600BC1469 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F9362250299035EE00D2B111 /* Coordination */,
+				F936224D298EB9E000D2B111 /* Loan */,
+				F9A5CA8429849D3800BC1469 /* Widgets */,
+				F9A5C9FB297D76C400BC1469 /* immo_rechnerApp.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F9A5CA2D297D77F300BC1469 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F9A5CA67297E0F2200BC1469 /* Equity */,
+				F9A5CA63297E0C1D00BC1469 /* Buy */,
+				F9A5CA5F297E0B8500BC1469 /* Rent */,
+				F9A5CA30297D8D0C00BC1469 /* Property */,
+				F9A5CA4C297DF3B100BC1469 /* Loan */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F9A5CA30297D8D0C00BC1469 /* Property */ = {
+			isa = PBXGroup;
+			children = (
+				F9A5CA2E297D8BE300BC1469 /* Property.swift */,
+			);
+			path = Property;
+			sourceTree = "<group>";
+		};
+		F9A5CA3B297D972000BC1469 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				F9A5CA6E297E10BA00BC1469 /* ROI */,
+				F9A5CA54297E00A600BC1469 /* Rent */,
+				F9A5CA4D297DF45C00BC1469 /* Loan */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		F9A5CA43297DA17400BC1469 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				F9A5CA7A2980AFE400BC1469 /* FormulaManager.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		F9A5CA4C297DF3B100BC1469 /* Loan */ = {
+			isa = PBXGroup;
+			children = (
+				F9A5CA36297D91BD00BC1469 /* AnnuityLoan.swift */,
+				F9A5CA39297D936800BC1469 /* RepaymentPlan.swift */,
+				F9A5CA4E297DF57600BC1469 /* RepaymentPlanStep.swift */,
+			);
+			path = Loan;
+			sourceTree = "<group>";
+		};
+		F9A5CA4D297DF45C00BC1469 /* Loan */ = {
+			isa = PBXGroup;
+			children = (
+				F9A5CA3C297D976200BC1469 /* GetRepaymentPlan.swift */,
+			);
+			path = Loan;
+			sourceTree = "<group>";
+		};
+		F9A5CA54297E00A600BC1469 /* Rent */ = {
+			isa = PBXGroup;
+			children = (
+				F9A5CA5C297E050400BC1469 /* GetRentPaymentPlan.swift */,
+			);
+			path = Rent;
+			sourceTree = "<group>";
+		};
+		F9A5CA5F297E0B8500BC1469 /* Rent */ = {
+			isa = PBXGroup;
+			children = (
+				F9A5CA56297E032A00BC1469 /* Rent.swift */,
+				F9A5CA60297E0B9A00BC1469 /* RentPaymentPlan.swift */,
+			);
+			path = Rent;
+			sourceTree = "<group>";
+		};
+		F9A5CA63297E0C1D00BC1469 /* Buy */ = {
+			isa = PBXGroup;
+			children = (
+				F9A5CA31297D8D5F00BC1469 /* Purchase.swift */,
+				F9A5CA33297D8E5700BC1469 /* AdditionalCostRatios.swift */,
+			);
+			path = Buy;
+			sourceTree = "<group>";
+		};
+		F9A5CA67297E0F2200BC1469 /* Equity */ = {
+			isa = PBXGroup;
+			children = (
+				F9A5CA68297E0F8000BC1469 /* EquityInvestment.swift */,
+				F9A5CA6B297E104A00BC1469 /* EquityInvestmentReturnPlan.swift */,
+				F9A5CA75297F11AE00BC1469 /* EquityInvestmentReturnStep.swift */,
+			);
+			path = Equity;
+			sourceTree = "<group>";
+		};
+		F9A5CA6E297E10BA00BC1469 /* ROI */ = {
+			isa = PBXGroup;
+			children = (
+				F9A5CA6F297E10CF00BC1469 /* GetEquityInvestmentReturnPlan.swift */,
+			);
+			path = ROI;
+			sourceTree = "<group>";
+		};
+		F9A5CA83298342CE00BC1469 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F9A5CA44297DA18B00BC1469 /* FloatExt.swift */,
+				F9A5CA51297DF6F600BC1469 /* DateExt.swift */,
+				F9A5CA802983424600BC1469 /* ColorExt.swift */,
+				F9362253299049D200D2B111 /* StringExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F9A5CA8429849D3800BC1469 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				F936223E2987036A00D2B111 /* InputTextField.swift */,
+				F93622402987038E00D2B111 /* InputUITextField.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9A5C9F7297D76C400BC1469 /* immo-rechner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9A5CA21297D76C500BC1469 /* Build configuration list for PBXNativeTarget "immo-rechner" */;
+			buildPhases = (
+				F9A5C9F4297D76C400BC1469 /* Sources */,
+				F9A5C9F5297D76C400BC1469 /* Frameworks */,
+				F9A5C9F6297D76C400BC1469 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "immo-rechner";
+			productName = "immo-rechner";
+			productReference = F9A5C9F8297D76C400BC1469 /* immo-rechner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F9A5CA0C297D76C500BC1469 /* immo-rechnerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9A5CA24297D76C500BC1469 /* Build configuration list for PBXNativeTarget "immo-rechnerTests" */;
+			buildPhases = (
+				F9A5CA09297D76C500BC1469 /* Sources */,
+				F9A5CA0A297D76C500BC1469 /* Frameworks */,
+				F9A5CA0B297D76C500BC1469 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9A5CA0F297D76C500BC1469 /* PBXTargetDependency */,
+			);
+			name = "immo-rechnerTests";
+			productName = "immo-rechnerTests";
+			productReference = F9A5CA0D297D76C500BC1469 /* immo-rechnerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F9A5CA16297D76C500BC1469 /* immo-rechnerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9A5CA27297D76C500BC1469 /* Build configuration list for PBXNativeTarget "immo-rechnerUITests" */;
+			buildPhases = (
+				F9A5CA13297D76C500BC1469 /* Sources */,
+				F9A5CA14297D76C500BC1469 /* Frameworks */,
+				F9A5CA15297D76C500BC1469 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9A5CA19297D76C500BC1469 /* PBXTargetDependency */,
+			);
+			name = "immo-rechnerUITests";
+			productName = "immo-rechnerUITests";
+			productReference = F9A5CA17297D76C500BC1469 /* immo-rechnerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9A5C9F0297D76C400BC1469 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					F9A5C9F7297D76C400BC1469 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					F9A5CA0C297D76C500BC1469 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = F9A5C9F7297D76C400BC1469;
+					};
+					F9A5CA16297D76C500BC1469 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = F9A5C9F7297D76C400BC1469;
+					};
+				};
+			};
+			buildConfigurationList = F9A5C9F3297D76C400BC1469 /* Build configuration list for PBXProject "immo-rechner" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				de,
+			);
+			mainGroup = F9A5C9EF297D76C400BC1469;
+			productRefGroup = F9A5C9F9297D76C400BC1469 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9A5C9F7297D76C400BC1469 /* immo-rechner */,
+				F9A5CA0C297D76C500BC1469 /* immo-rechnerTests */,
+				F9A5CA16297D76C500BC1469 /* immo-rechnerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9A5C9F6297D76C400BC1469 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9A5CA03297D76C500BC1469 /* Preview Assets.xcassets in Resources */,
+				F9C8F3D72992869A002368F5 /* Localizable.strings in Resources */,
+				F9A5CA00297D76C500BC1469 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A5CA0B297D76C500BC1469 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A5CA15297D76C500BC1469 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9A5C9F4297D76C400BC1469 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F936224C2987454400D2B111 /* LoanRepaymentPlanView.swift in Sources */,
+				F93622412987038E00D2B111 /* InputUITextField.swift in Sources */,
+				F9A5CA34297D8E5700BC1469 /* AdditionalCostRatios.swift in Sources */,
+				F9A5CA7E2983274C00BC1469 /* CreateLoanView.swift in Sources */,
+				F9A5CA45297DA18B00BC1469 /* FloatExt.swift in Sources */,
+				F9A5CA61297E0B9A00BC1469 /* RentPaymentPlan.swift in Sources */,
+				F9362252299035FE00D2B111 /* Destination.swift in Sources */,
+				F9A5CA52297DF6F600BC1469 /* DateExt.swift in Sources */,
+				F9A5CA4F297DF57600BC1469 /* RepaymentPlanStep.swift in Sources */,
+				F936224F29902E2B00D2B111 /* Coordinator.swift in Sources */,
+				F9A5CA6C297E104A00BC1469 /* EquityInvestmentReturnPlan.swift in Sources */,
+				F9A5CA812983424600BC1469 /* ColorExt.swift in Sources */,
+				F9A5CA76297F11AE00BC1469 /* EquityInvestmentReturnStep.swift in Sources */,
+				F936223F2987036A00D2B111 /* InputTextField.swift in Sources */,
+				F9A5CA3A297D936800BC1469 /* RepaymentPlan.swift in Sources */,
+				F9A5CA3D297D976200BC1469 /* GetRepaymentPlan.swift in Sources */,
+				F9A5CA05297D76C500BC1469 /* Persistence.swift in Sources */,
+				F9A5CA32297D8D5F00BC1469 /* Purchase.swift in Sources */,
+				F9A5CA5D297E050400BC1469 /* GetRentPaymentPlan.swift in Sources */,
+				F9A5CA08297D76C500BC1469 /* immo_rechner.xcdatamodeld in Sources */,
+				F9A5CA69297E0F8000BC1469 /* EquityInvestment.swift in Sources */,
+				F936224429872C5B00D2B111 /* CreateLoanViewModel.swift in Sources */,
+				F9A5CA2F297D8BE300BC1469 /* Property.swift in Sources */,
+				F9A5CA57297E032A00BC1469 /* Rent.swift in Sources */,
+				F9A5CA7B2980AFE400BC1469 /* FormulaManager.swift in Sources */,
+				F9A5CA70297E10CF00BC1469 /* GetEquityInvestmentReturnPlan.swift in Sources */,
+				F9362254299049D200D2B111 /* StringExt.swift in Sources */,
+				F9A5C9FC297D76C400BC1469 /* immo_rechnerApp.swift in Sources */,
+				F9A5CA37297D91BD00BC1469 /* AnnuityLoan.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A5CA09297D76C500BC1469 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9A5CA41297D9BC700BC1469 /* GetRepaymentPlan.swift in Sources */,
+				F9A5CA822983424600BC1469 /* ColorExt.swift in Sources */,
+				F9A5CA74297E124100BC1469 /* EquityInvestmentTests.swift in Sources */,
+				F936224829873DFC00D2B111 /* InputTextField.swift in Sources */,
+				F936224629873C9100D2B111 /* CreateLoanViewModelTests.swift in Sources */,
+				F9A5CA6A297E0F8000BC1469 /* EquityInvestment.swift in Sources */,
+				F936224929873E0B00D2B111 /* InputUITextField.swift in Sources */,
+				F9A5CA48297DC82800BC1469 /* AnnuityLoanTests.swift in Sources */,
+				F9A5CA62297E0B9A00BC1469 /* RentPaymentPlan.swift in Sources */,
+				F9A5CA46297DABEC00BC1469 /* FloatExt.swift in Sources */,
+				F9A5CA6D297E104A00BC1469 /* EquityInvestmentReturnPlan.swift in Sources */,
+				F9A5CA42297DA06A00BC1469 /* RepaymentPlan.swift in Sources */,
+				F9A5CA40297D9B1200BC1469 /* AnnuityLoan.swift in Sources */,
+				F9A5CA50297DF57600BC1469 /* RepaymentPlanStep.swift in Sources */,
+				F9A5CA7C2980AFE400BC1469 /* FormulaManager.swift in Sources */,
+				F9A5CA77297F11AE00BC1469 /* EquityInvestmentReturnStep.swift in Sources */,
+				F9A5CA3F297D9AE100BC1469 /* GetRepaymentPlanTests.swift in Sources */,
+				F9A5CA72297E122600BC1469 /* Rent.swift in Sources */,
+				F9A5CA5E297E050400BC1469 /* GetRentPaymentPlan.swift in Sources */,
+				F9A5CA53297DF6F600BC1469 /* DateExt.swift in Sources */,
+				F9A5CA792980A2C000BC1469 /* GetRentPaymentPlanTests.swift in Sources */,
+				F9A5CA71297E10CF00BC1469 /* GetEquityInvestmentReturnPlan.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A5CA13297D76C500BC1469 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9A5CA1E297D76C500BC1469 /* immo_rechnerUITestsLaunchTests.swift in Sources */,
+				F9A5CA1C297D76C500BC1469 /* immo_rechnerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F9A5CA0F297D76C500BC1469 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9A5C9F7297D76C400BC1469 /* immo-rechner */;
+			targetProxy = F9A5CA0E297D76C500BC1469 /* PBXContainerItemProxy */;
+		};
+		F9A5CA19297D76C500BC1469 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9A5C9F7297D76C400BC1469 /* immo-rechner */;
+			targetProxy = F9A5CA18297D76C500BC1469 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F9C8F3D92992869A002368F5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9C8F3D82992869A002368F5 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9A5CA1F297D76C500BC1469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F9A5CA20297D76C500BC1469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9A5CA22297D76C500BC1469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"immo-rechner/Preview Content\"";
+				DEVELOPMENT_TEAM = 7969TUFR58;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = LIGHT;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.nicetoapp.immo-rechner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F9A5CA23297D76C500BC1469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"immo-rechner/Preview Content\"";
+				DEVELOPMENT_TEAM = 7969TUFR58;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = LIGHT;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.nicetoapp.immo-rechner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F9A5CA25297D76C500BC1469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.nicetoapp.immo-rechnerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/immo-rechner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/immo-rechner";
+			};
+			name = Debug;
+		};
+		F9A5CA26297D76C500BC1469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.nicetoapp.immo-rechnerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/immo-rechner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/immo-rechner";
+			};
+			name = Release;
+		};
+		F9A5CA28297D76C500BC1469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.nicetoapp.immo-rechnerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "immo-rechner";
+			};
+			name = Debug;
+		};
+		F9A5CA29297D76C500BC1469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.nicetoapp.immo-rechnerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "immo-rechner";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9A5C9F3297D76C400BC1469 /* Build configuration list for PBXProject "immo-rechner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9A5CA1F297D76C500BC1469 /* Debug */,
+				F9A5CA20297D76C500BC1469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9A5CA21297D76C500BC1469 /* Build configuration list for PBXNativeTarget "immo-rechner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9A5CA22297D76C500BC1469 /* Debug */,
+				F9A5CA23297D76C500BC1469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9A5CA24297D76C500BC1469 /* Build configuration list for PBXNativeTarget "immo-rechnerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9A5CA25297D76C500BC1469 /* Debug */,
+				F9A5CA26297D76C500BC1469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9A5CA27297D76C500BC1469 /* Build configuration list for PBXNativeTarget "immo-rechnerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9A5CA28297D76C500BC1469 /* Debug */,
+				F9A5CA29297D76C500BC1469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F9A5CA06297D76C500BC1469 /* immo_rechner.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F9A5CA07297D76C500BC1469 /* immo_rechner.xcdatamodel */,
+			);
+			currentVersion = F9A5CA07297D76C500BC1469 /* immo_rechner.xcdatamodel */;
+			path = immo_rechner.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F9A5C9F0297D76C400BC1469 /* Project object */;
+}
